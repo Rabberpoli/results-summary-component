@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="src/results-summary.css"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500&family=Montserrat+Alternates:wght@200;400;700&family=Overpass:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700&family=Montserrat+Alternates:wght@200;400;700&family=Overpass:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&family=Montserrat+Alternates:wght@200;400;700&family=Overpass:wght@200&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,8 +23,57 @@
   </style>
 </head>
 <body>
+  <h1 class="hidden-h1"> Results summary component </h1>
 
-  Your Result
+  <main class="card-container">
+    <div class="results-card">
+      <div class="result-block">
+        <h2 class="result-h2 mt-25 mb-25">
+          Your result
+        </h2>
+        <div class="mb-25">
+          <div class="background-circle">
+            <p id="resultValue" class="result-text"> 76</p>
+            <p class="result-label"> of 100</p>
+          </div>
+        </div>
+        <div class="align-center mb-25">
+          <h2 class="mb-10">
+            Great
+          </h2>
+          <p class="description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="summary-container">
+        <h2 class="summary-h2 mt-23"> Summary </h2>
+        <div class="categories-container">
+          <div class="category-reaction-container">
+            <img src="assets/images/icon-reaction.svg">
+            <p class="label-reaction"> Reaction </p>
+            <p class="score"> <b>80</b> / 100</p>
+          </div>
+          <div class="category-memory-container">
+            <img src="assets/images/icon-memory.svg">
+            <p class="label-memory"> Memory </p>
+            <p class="score"> <b>92</b> / 100</p>
+          </div>
+          <div class="category-verbal-container">
+            <img src="assets/images/icon-verbal.svg">
+            <p class="label-verbal"> Verbal </p>
+            <p class="score"> <b>61</b> / 100</p>
+          </div>
+          <div class="category-visual-container">
+            <img src="assets/images/icon-visual.svg">
+            <p class="label-visual"> Visual </p>
+            <p class="score"> <b>72</b> / 100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Your Result
   76
   of 100
 
@@ -37,11 +94,11 @@
   Visual
   72 / 100
 
-  Continue
+  Continue -->
   
+  <script src="./src/results-summary.js"></script>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Rabberpoli">Rube</a>.
   </div>
 </body>
 </html>
